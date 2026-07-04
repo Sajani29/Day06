@@ -66,9 +66,32 @@ document.title = "Day 06 - ICM120";
 //     headingElement.innerText = "minus";
 // }
 
-function displayInput(){
-    console.log("display button clicked");
-    let inputid = document.getElementById("textInput");
-    console.log(inputid.value);
-    document.getElementById("inputvalue").innerText = inputid.value;
-}
+// function displayInput(){
+//     console.log("display button clicked");
+//     let inputid = document.getElementById("textInput");
+//     console.log(inputid.value);
+//     document.getElementById("inputvalue").innerText = inputid.value;
+// }
+// let outputElement = document.getElementById("outputid");
+// function addNumbers(){
+//     console.log("add button clicked");
+//     let num1 = document.getElementById("textInput");
+//     console.log(num1.value);
+//     let num2 = document.getElementById("textInput2");
+//     console.log(num2.value);
+//     let sum = parseInt(num1.value) + parseInt(num2.value);
+//     console.log(sum);
+//     outputElement.value = sum;
+// }
+// function subtractNumbers(){
+//     console.log("subtract button clicked");
+//     let num1 = document.getElementById("textInput");
+//     console.log(num1.value);
+//     let num2 = document.getElementById("textInput2");
+//     console.log(num2.value);
+//     let difference = parseInt(num1.value) - parseInt(num2.value);
+//     console.log(difference);
+//     outputElement.value = difference;
+    
+    
+// }
