@@ -55,5 +55,20 @@ console.log(document.title);
 document.title = "Day 06 - ICM120";
 
 
-let headingElement = document.getElementById("heading");
-headingElement.innerText="sajani";
+// let headingElement = document.getElementById("heading");
+// let number = 0;
+// function pluseHeading() {
+//     console.log("pluse button clicked"+" " + ++number);
+//     headingElement.innerText = "pluse";
+// }
+// function minusHeading() {
+//     console.log("minus button clicked"+" " + --number);
+//     headingElement.innerText = "minus";
+// }
+
+function displayInput(){
+    console.log("display button clicked");
+    let inputid = document.getElementById("textInput");
+    console.log(inputid.value);
+    document.getElementById("inputvalue").innerText = inputid.value;
+}
