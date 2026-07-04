@@ -36,15 +36,24 @@ let Customer1 = {
         email: "father@.com"
     }
 };
-console.log(Customer1.name);
-console.log(Customer1.age); 
-console.log(Customer1.email);
-console.log(Customer1.items);
-console.log(Customer1.father.name);
-console.log(Customer1.father.age);
-console.log(Customer1.father.email);    
-console.log(Customer1.items[0]);
-console.log(Customer1.items[0].itemName);
-console.log(Customer1.items[0].itemPrice);
-console.log(Customer1.items[0].variant.color);
-console.log(Customer1.items[0].variant.size);   
+// console.log(Customer1.name);
+// console.log(Customer1.age); 
+// console.log(Customer1.email);
+// console.log(Customer1.items);
+// console.log(Customer1.father.name);
+// console.log(Customer1.father.age);
+// console.log(Customer1.father.email);    
+// console.log(Customer1.items[0]);
+// console.log(Customer1.items[0].itemName);
+// console.log(Customer1.items[0].itemPrice);
+// console.log(Customer1.items[0].variant.color);
+// console.log(Customer1.items[0].variant.size);   
+
+console.log(document);
+console.log(document.documentURI);
+console.log(document.title);
+document.title = "Day 06 - ICM120";
+
+
+let headingElement = document.getElementById("heading");
+headingElement.innerText="sajani";
