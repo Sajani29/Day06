@@ -49,10 +49,10 @@ let Customer1 = {
 // console.log(Customer1.items[0].variant.color);
 // console.log(Customer1.items[0].variant.size);   
 
-console.log(document);
-console.log(document.documentURI);
-console.log(document.title);
-document.title = "Day 06 - ICM120";
+// console.log(document);
+// console.log(document.documentURI);
+// console.log(document.title);
+// document.title = "Day 06 - ICM120";
 
 
 // let headingElement = document.getElementById("heading");
@@ -72,6 +72,9 @@ document.title = "Day 06 - ICM120";
 //     console.log(inputid.value);
 //     document.getElementById("inputvalue").innerText = inputid.value;
 // }
+
+//calculator=========================================
+
 // let outputElement = document.getElementById("outputid");
 // function addNumbers(){
 //     console.log("add button clicked");
