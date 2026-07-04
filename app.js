@@ -1,41 +1,41 @@
-console.log("hello day 06");
+// console.log("hello day 06");
 
-let Customer1 = {
-    name: "John Doe",
-    age: 30,
-    email: "mial@.com",
-    items: [
-        {
-            itemName: "Item 1",
-            itemPrice: 100,
-            variant: {
-                color: "red",
-                size: "M"
-            }  
-        },
-        {
-            itemName: "Item 2",
-            itemPrice: 200 ,
-            variant: {
-                color: "blue",
-                size: "L"
-            }
-        },
-        {
-            itemName: "Item 3",
-            itemPrice: 300 ,
-            variant: {
-                color: "green",
-                size: "S"
-            }
-        }
-    ],
-    father: {
-        name: "John Doe Sr.",
-        age: 60,
-        email: "father@.com"
-    }
-};
+// let Customer1 = {
+//     name: "John Doe",
+//     age: 30,
+//     email: "mial@.com",
+//     items: [
+//         {
+//             itemName: "Item 1",
+//             itemPrice: 100,
+//             variant: {
+//                 color: "red",
+//                 size: "M"
+//             }  
+//         },
+//         {
+//             itemName: "Item 2",
+//             itemPrice: 200 ,
+//             variant: {
+//                 color: "blue",
+//                 size: "L"
+//             }
+//         },
+//         {
+//             itemName: "Item 3",
+//             itemPrice: 300 ,
+//             variant: {
+//                 color: "green",
+//                 size: "S"
+//             }
+//         }
+//     ],
+//     father: {
+//         name: "John Doe Sr.",
+//         age: 60,
+//         email: "father@.com"
+//     }
+// };
 // console.log(Customer1.name);
 // console.log(Customer1.age); 
 // console.log(Customer1.email);
@@ -95,6 +95,56 @@ let Customer1 = {
 //     let difference = parseInt(num1.value) - parseInt(num2.value);
 //     console.log(difference);
 //     outputElement.value = difference;
-    
-    
+
+
 // }
+
+// ADD CUSTOMER APPLICATIONS
+
+let customerList = [];
+
+function displayInput() {
+    console.log("display button clicked");
+    let textName = document.getElementById("textName").value;
+    console.log(textName);
+    let textAddress = document.getElementById("textAddress").value;
+    console.log(textAddress);
+    let textAge = document.getElementById("textAge").value;
+    console.log(textAge);
+    let textEmail = document.getElementById("textEmail").value;
+    console.log(textEmail);
+    let textSalary = document.getElementById("textSalary").value;
+    console.log(textSalary);
+
+    Customer = {
+        name: textName,
+        address: textAddress,
+        age: textAge,
+        email: textEmail,
+        salary: textSalary
+    }
+    customerList.push(Customer);
+    console.log(customerList);
+
+}
+
+    function loadTable() {
+        let tblCustomers = document.getElementById("tblCustomers");
+
+        let body = "";
+
+        for (let i = 0; i < customerList.length; i++) {
+            body += `<tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+        </tr>`;
+        }
+
+        tblCustomers.innerHTML = body;
+
+        console.log(tblCustomers);
+
+    }

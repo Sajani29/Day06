@@ -16,6 +16,10 @@
     <h1 id="inputvalue">Input display</h1>
     <input type="button" value="Display" onclick="displayInput()"> -->
 
+
+    <!-- calculator -->
+<!-- 
+
     <h2 style="background-color: chartreuse;"><center>Calculator</center></h2>
     <div style="display: flex; align-items: center; gap: 10px;">
         <h3 style="color: chocolate;">Input first number: </h3>
@@ -35,8 +39,27 @@
     <div style="display: flex; align-items: center; gap: 10px; margin-top: 20px; gap: 10px;">
          <h3 style="color: chocolate;">Output: </h3>
         <input type="text" id="outputid" placeholder="Output will appear here" style="color: blue;">
-    </div>
-   
+    </div> -->
+
+    <input type="text" id="textName" placeholder="Enter name" > <br>
+    <input type="text" id="textAddress" placeholder="Enter Address" > <br>
+    <input type="text" id="textAge" placeholder="Enter age" > <br>
+    <input type="text" id="textEmail" placeholder="Enter email" > <br>
+    <input type="text" id="textSalary" placeholder="Enter salary" > <br> <br>
+    
+    <input type="button" value="Add customer" onclick="displayInput()">
+    
+    <table border="1" id="tblCustomers">
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Age</td>
+            <td>Email</td>
+            <td>Salary</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Load Table" onclick="loadTable()">
     
     <script src="app.js"></script>
 </body>
